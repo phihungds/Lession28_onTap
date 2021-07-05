@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành 1</title>
+    <style>
+        *{box-sizing: border-box; padding: 0px; margin: 0px;}
+        a {color: black; text-decoration: none;}
+        li {list-style: none; padding: 10px;}
+        li:hover {background: #0da80d;}
+        li:hover a{color: white;}
+        
+        #menu { width: 25%; float: left; background: #dfc9c9; }
+        
+        #content{ width: 75%; padding: 10px;float: left; }
+        
+        #all{ width: 100%;}
+        @media only screen and (max-width:768px) {
+            #menu {width: 100%;float: none; }
+            #menu li {float: left;}
+            #content {width: 100%;}
+            ul {
+            width: 100%;
+            height: 40px;
+            background: #dfc9c9;}
+        }
+        @media only screen and (max-width: 501px) {
+            #menu li {width: 100%;
+            text-align: center;}
+            ul {height: 150px;}
+        }
+    </style>
+</head> 
+<body>
+    <div id="all">
+        <div id="menu">
+            <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href=""> News</a></li>
+                <li><a href=""> Contact</a></li>
+                <li><a href=""> About</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Đây là bài luyện tập responsive</h2>
+            <p>Dân Trí là một tờ báo điện tử trực thuộc Bộ Lao đông - Thương binh và Xã hội. Theo thống kê của Google, đến nay, mỗi tháng có bình quân Dân trí có 900 triệu pageviews; mỗi ngày có bình quân trên 10 triệu lượt người truy cập vào báo Dân trí tiếng Việt và tiếng Anh, trong đó 20% người truy cập từ nước ngoài.</p>
+        </div>
+    </div>
+</body>
+</html>
